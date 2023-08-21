@@ -1,0 +1,10 @@
+n=int(input())                              #getting input 
+if n>1:                                     #prime number should be greater than 1
+  for i in range(2,int(n/2)+1):             #Here i use for loop and fix the range between 2 to n/2+1
+    if(n%i==0):                             #anything which divides between these range its not a prime
+      print("no")
+      break
+  else:
+   print("yes")
+else:
+  print("no")
